@@ -1,42 +1,69 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+
+/* ================================================== BASIC STYLES */
+
+html { scroll-behavior: smooth; }
+
+.link a:link {color: #c46200;}
+.link a:visited {color: #c46200;}
+.link a:focus {color: #c46200;}
+.link a:hover {color: #b87d42;}
+.link a:active {color: #c46200;}
+
+h1 {
+    color: #c46200;
+    font-size: 70px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h2 {
+    color: #e6d61d;
+    font-size: 37px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wrapper {
+    display: flex;
+    min-height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.container {
+    max-width: 1300px;
+    margin: 0px auto;
 }
 
-.card {
-  padding: 2em;
+.services {
+    display: flex;
+    flex-direction: column;
 }
 
-.read-the-docs {
-  color: #888;
+.block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 140px 0 0 0;
+}
+
+.sub_block {
+    max-width: 500px;
+    margin: 0 20px 0 0;
+    line-height: normal;
 }
