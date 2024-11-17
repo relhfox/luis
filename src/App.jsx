@@ -1,6 +1,6 @@
 import './App.css'
 import Block from './components/Block'
-/* import { ReactLenis } from 'lenis/react' */
+import Hero from './components/Hero'
 
 function App() {
 
@@ -16,23 +16,23 @@ function App() {
     const textFourth = 'Offering personalized coaching to professionals and organizations aiming to enhance their understanding and application of inclusion and accessibility principles.'
     const textFifth = 'Delivering engaging and insightful talks on inclusion, accessibility, and sustainable impact at conferences, seminars, and corporate events.'
 
-    return (
-/*      <ReactLenis root options={{ autoRaf: true }}> */
-            <div className='main'>
-                <div className='container'>
-                    <div className='services'>
-                        <h1>www.unstoppableliving.co.uk</h1>
-                        <Block id='' link='#second' title={titleFirst} text={textFirst} />
-                        <Block id='second' link='#third' title={titleSecond} text={textSecond} />
-                        <Block id='third' link='#fourth' title={titleThird} text={textThird} />
-                        <Block id='fourth' link='#fifth' title={titleFourth} text={textFourth} />
-                        <Block id='fifth' link='' title={titleFifth} text={textFifth} />
-                        <br /><br /><br /><br /><br />
-                    </div>
+    return (<>
+        <div style={{backgroundImage: 'linear-gradient(#11005b, #070026)', height: '100%', width: '100%', position: 'fixed', top: '0px', left: '0px', zIndex: 0}}/>
+        <div className='main' style={{zIndex: 9}}>
+            <div className='container'>
+                <h1>www.unstoppableliving.co.uk</h1>
+                <Hero />
+                <div className='services'>
+                    <Block title={titleFirst} text={textFirst} link={titleSecond}/>
+                    <Block title={titleSecond} text={textSecond} link={titleThird}/>
+                    <Block title={titleThird} text={textThird} link={titleFourth}/>
+                    <Block title={titleFourth} text={textFourth} link={titleFifth}/>
+                    <Block title={titleFifth} text={textFifth} link=''/>
+                    <br /><br /><br /><br /><br />
                 </div>
             </div>
-/*        </ReactLenis> */
-    )
+        </div>
+    </>)
 }
 
 export default App

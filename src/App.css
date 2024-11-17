@@ -18,11 +18,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 
 html { scroll-behavior: smooth; }
 
-.link a:link {color: #c46200;}
-.link a:visited {color: #c46200;}
-.link a:focus {color: #c46200;}
-.link a:hover {color: #b87d42;}
-.link a:active {color: #c46200;}
+a:link {color: #c46200;}
+a:visited {color: #c46200;}
+a:focus {color: #c46200;}
+a:hover {color: #b87d42;}
+a:active {color: #c46200;}
 
 h1 {
     color: #c46200;
@@ -39,7 +39,7 @@ h2 {
     min-height: 100%;
     overflow: hidden;
     flex-direction: column;
-    background-color: #000000;
+    background-color: #070026;
     color: #ffffff;
     font-family: "Gill Sans", sans-serif;
     font-size: 30px;
@@ -60,10 +60,4 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     padding: 140px 0 0 0;
-}
-
-.sub_block {
-    max-width: 500px;
-    margin: 0 20px 0 0;
-    line-height: normal;
 }
