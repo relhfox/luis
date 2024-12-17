@@ -1,0 +1,44 @@
+.social-buttons {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    margin-top: -180px;
+}
+
+.social-buttons a {
+    display: flex;
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    color: #1c0097;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 0;
+}
+
+.social-buttons a::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, #f39c12, #c0392b);
+    border-radius: 50%;
+    z-index: -1;
+    transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover::before {
+    transform: scale(0);
+}
+
+.social-buttons a i {
+    transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover i {
+    background: linear-gradient(45deg, #f39c12, #c0392b);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.7);
+}
